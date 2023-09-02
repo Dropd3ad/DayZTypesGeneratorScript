@@ -58,7 +58,7 @@ Classname_05
 class_names = list(set(input_class_names.strip().split('\n')))
 xml_content = generate_xml(class_names)
 
-downloads_folder = os.path.expanduser("Downloads\\Export")
+downloads_folder = os.path.expanduser("~\\Downloads\\Export")
 if not os.path.exists(downloads_folder):
     os.makedirs(downloads_folder)
 output_file_path = os.path.join(downloads_folder, "types_missing.xml")
